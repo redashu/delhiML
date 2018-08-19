@@ -2,8 +2,11 @@
 
 # importing opencv module 
 import  cv2
+import  numpy    as  np
 #  reading an image 
-img=cv2.imread('dogs.jpg')
+img=np.zeros((512,512,3))
+#img=np.full((512,512,3),255)
+#img=cv2.imread('dogs.jpg')
 
 # print  resolution of image
 print(img.shape)
