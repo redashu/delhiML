@@ -7,8 +7,7 @@ def  img_diff_create(x,y,z):
     img_diff1=cv2.absdiff(x,y)
     img_diff2=cv2.absdiff(y,z)
     img3=cv2.bitwise_and(img_diff1,img_diff2)
-    return img3
-
+    return  img3
 
 #  starting  camera
 cap=cv2.VideoCapture(0)
@@ -29,7 +28,7 @@ while True:
     # reading more  images
     status,frame=cap.read()
     # showing  original image
-    #cv2.imshow('original',frame)
+    cv2.imshow('original',frame)
     # image transpose operation 
     gray1=gray2
     gray2=gray3
